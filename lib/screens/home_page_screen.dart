@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/customScrollbarWithSingleChildScrollView.dart';
+import '../widgets/mainBody1.dart';
 import '../widgets/mainevent_card.dart';
 
 class HomePage extends StatefulWidget {
@@ -26,18 +27,18 @@ class _HomePageState extends State<HomePage> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Container(
-                width: 5000,
+                width: dwidth + 100,
                 height: dheight - (dheight - 102),
-                color: Color.fromARGB(255, 204, 243, 154),
                 child: CustomScrollbarWithSingleChildScrollView(
                     controller: con,
                     scrollDirection: Axis.horizontal,
                     child: Container(
-                      height: 3000,
-                      child: Text(
-                          'ttrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr66666666666666666666666666666666666666666666666666666666666677777777777777777777777777777777777777777777777777777777777799999999999999999999999999999999999999999999999999999999999999999999990000000000000000000000000000000000000000000'),
+                      color: Color.fromARGB(66, 246, 242, 242),
+                      width: dwidth,
+                      child: MainBody1(dwidth),
                     )),
               ),
+
               //
 
               Container(
