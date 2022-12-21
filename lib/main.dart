@@ -30,8 +30,9 @@ class _NavigationExampleState extends State<NavigationExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: NavigationBar(
+        backgroundColor: Color.fromARGB(255, 125, 189, 241),
         animationDuration: Duration(milliseconds: 500),
-        height: 80,
+        height: 60,
         onDestinationSelected: (int index) {
           setState(() {
             currentPageIndex = index;
