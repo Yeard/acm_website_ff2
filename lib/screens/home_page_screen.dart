@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../widgets/customScrollbarWithSingleChildScrollView.dart';
 import '../widgets/home_page_main_card.dart';
+import '../widgets/logos.dart';
 import '../widgets/mainBody1.dart';
+import '../widgets/what_we_do.dart';
+import '../widgets/what_we_do_card.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -33,6 +36,13 @@ class _HomePageState extends State<HomePage> {
                 color: Color.fromARGB(255, 245, 0, 0),
                 child: MainImageCard(),
               ),
+              //
+              Container(
+                width: dwidth,
+                height: 450,
+                color: Color.fromARGB(255, 163, 224, 248),
+                child: Logos(dwidth, dheight),
+              ),
 
               // second
               Container(
@@ -60,7 +70,15 @@ class _HomePageState extends State<HomePage> {
                     )),
               ),*/
               Padding(padding: EdgeInsets.all(10)),
+
+              Container(
+                width: dwidth,
+                height: 500,
+                color: Color.fromARGB(255, 89, 199, 243),
+                child: WhatWeDo(dwidth, dheight),
+              ),
               // third
+              Padding(padding: EdgeInsets.all(10)),
 
               Container(
                 width: dwidth,

@@ -9,7 +9,7 @@ class MainImageCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: FittedBox(
-        fit: BoxFit.fill,
+        fit: BoxFit.cover,
         child: Image.asset('images/acm_cover_photo.png'),
       ),
     );
