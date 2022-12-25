@@ -5,7 +5,7 @@ import '../widgets/home_page_main_card.dart';
 import '../widgets/logos.dart';
 import '../widgets/mainBody1.dart';
 import '../widgets/what_we_do.dart';
-import '../widgets/what_we_do_card.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -32,30 +32,52 @@ class _HomePageState extends State<HomePage> {
               //first
               Container(
                 width: double.infinity,
-                height: 250,
-                color: Color.fromARGB(255, 245, 0, 0),
+                height: 350,
+                color: Color.fromARGB(255, 163, 224, 248),
                 child: MainImageCard(),
               ),
               //
+              // iub acm logos
               Container(
                 width: dwidth,
                 height: 450,
                 color: Color.fromARGB(255, 163, 224, 248),
                 child: Logos(dwidth, dheight),
               ),
+              // acm updats
 
-              // second
+              Container(
+                padding: EdgeInsets.only(top: 10),
+                color: Color.fromARGB(255, 163, 224, 248),
+                width: dwidth,
+                height: 60,
+                child: Text(
+                  'IUB ACM UPDATES',
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.lato(
+                      textStyle: Theme.of(context).textTheme.headline2,
+                      fontSize: 30,
+                      fontWeight: FontWeight.w900,
+                      color: Colors.blue
+
+                      // fontStyle: FontStyle.italic,
+                      ),
+                ),
+              ),
+
+              // IUB ACM UPDATES
               Container(
                 width: dwidth + 100,
                 height: dheight - (dheight - 520),
                 child: CustomScrollbarWithSingleChildScrollView(
-                    controller: con,
-                    scrollDirection: Axis.horizontal,
-                    child: Container(
-                      color: Colors.white,
-                      width: dwidth,
-                      child: MainBody1(dwidth, dheight),
-                    )),
+                  controller: con,
+                  scrollDirection: Axis.horizontal,
+                  child: Container(
+                    color: Color.fromARGB(255, 0, 32, 45),
+                    width: dwidth,
+                    child: MainBody1(dwidth, dheight),
+                  ),
+                ),
               ),
 
               /*Container(
@@ -69,16 +91,16 @@ class _HomePageState extends State<HomePage> {
                       child: Text('tt'),
                     )),
               ),*/
-              Padding(padding: EdgeInsets.all(10)),
-
+              //what we do
+              //  Padding(padding: EdgeInsets.all(10)),
               Container(
                 width: dwidth,
-                height: 500,
+                height: 400,
                 color: Color.fromARGB(255, 89, 199, 243),
                 child: WhatWeDo(dwidth, dheight),
               ),
               // third
-              Padding(padding: EdgeInsets.all(10)),
+              // Padding(padding: EdgeInsets.all(10)),
 
               Container(
                 width: dwidth,

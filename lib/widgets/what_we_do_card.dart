@@ -24,18 +24,22 @@ class _WhatWeDoCardState extends State<WhatWeDoCard> {
       onEnter: (event) => OnHover(true),
       onExit: (event) => OnHover(false),
       child: AnimatedContainer(
-        width: hovering ? 350.0 : 270.0,
-        height: hovering ? 270.0 : 350.0,
+        //  width: hovering ? 350.0 : 270.0,
+        // height: hovering ? 270.0 : 350.0,
+        width: hovering ? 350.0 : 350.0,
+        height: hovering ? 270.0 : 270.0,
+
         //  color: hovering ? Colors.red : Colors.blue,
         alignment: hovering ? Alignment.center : AlignmentDirectional.topCenter,
-        duration: const Duration(seconds: 2),
+        duration: const Duration(milliseconds: 2000),
         decoration: BoxDecoration(
           color: hovering ? Colors.blue : Colors.white,
           borderRadius:
-              hovering ? BorderRadius.circular(20) : BorderRadius.circular(18),
+              hovering ? BorderRadius.circular(40) : BorderRadius.circular(15),
           boxShadow: [
             BoxShadow(
-              color: hovering ? Colors.black : Colors.black54,
+              color:
+                  hovering ? Colors.black : Color.fromARGB(135, 221, 10, 232),
               blurRadius: 3,
               offset: Offset(4, 4), // Shadow position
             ),
