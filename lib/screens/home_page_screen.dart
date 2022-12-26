@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/about.dart';
 import '../widgets/customScrollbarWithSingleChildScrollView.dart';
 import '../widgets/home_page_main_card.dart';
 import '../widgets/logos.dart';
@@ -25,7 +26,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          color: Colors.white,
+          color: Color.fromARGB(255, 0, 32, 45),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -45,11 +46,16 @@ class _HomePageState extends State<HomePage> {
                 child: Logos(dwidth, dheight),
               ),
               // acm updats
+              Padding(padding: EdgeInsets.only(top: 20)),
 
               Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(18),
+                  color: Colors.blue,
+                ),
                 padding: EdgeInsets.only(top: 10),
-                color: Color.fromARGB(255, 163, 224, 248),
-                width: dwidth,
+                //   color: Color.fromARGB(255, 163, 224, 248),
+                width: 300,
                 height: 60,
                 child: Text(
                   'IUB ACM UPDATES',
@@ -58,7 +64,7 @@ class _HomePageState extends State<HomePage> {
                       textStyle: Theme.of(context).textTheme.headline2,
                       fontSize: 30,
                       fontWeight: FontWeight.w900,
-                      color: Colors.blue
+                      color: Colors.white
 
                       // fontStyle: FontStyle.italic,
                       ),
@@ -79,6 +85,21 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
+              //About
+              Container(
+                width: dwidth,
+                height: 780,
+                child: CustomScrollbarWithSingleChildScrollView(
+                  controller: con,
+                  scrollDirection: Axis.horizontal,
+                  child: Container(
+                    color: Color.fromARGB(255, 4, 26, 35),
+                    width: dwidth,
+                    child: About(dwidth, dheight),
+                  ),
+                ),
+              ),
+              //
 
               /*Container(
                 width: dwidth,
@@ -96,7 +117,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 width: dwidth,
                 height: 400,
-                color: Color.fromARGB(255, 89, 199, 243),
+                color: Color.fromARGB(255, 128, 214, 248),
                 child: WhatWeDo(dwidth, dheight),
               ),
               // third

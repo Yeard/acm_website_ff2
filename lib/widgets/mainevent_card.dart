@@ -52,6 +52,7 @@ class MainEventCard extends StatelessWidget {
                           child: SingleChildScrollView(
                             child: Text(
                               name,
+                              textAlign: TextAlign.justify,
                               style: GoogleFonts.lato(
                                 textStyle:
                                     Theme.of(context).textTheme.headline4,

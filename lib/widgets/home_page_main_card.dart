@@ -27,6 +27,7 @@ class MainImageCard extends StatelessWidget {
             Container(
               alignment: Alignment.centerLeft,
               child: AnimatedTextKit(
+                displayFullTextOnTap: true,
                 repeatForever: true,
                 animatedTexts: [
                   WavyAnimatedText(

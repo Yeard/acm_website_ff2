@@ -64,6 +64,7 @@ class _WhatWeDoCardState extends State<WhatWeDoCard> {
             Container(
               padding: EdgeInsets.only(left: 11, right: 11, bottom: 11),
               child: Text(
+                textAlign: TextAlign.justify,
                 widget.discrection,
                 style: GoogleFonts.aBeeZee(
                     textStyle: Theme.of(context).textTheme.headline1,
