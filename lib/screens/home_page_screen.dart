@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../widgets/about.dart';
 import '../widgets/customScrollbarWithSingleChildScrollView.dart';
+import '../widgets/executivebody_card.dart';
+import '../widgets/executivebodys.dart';
 import '../widgets/home_page_main_card.dart';
 import '../widgets/logos.dart';
 import '../widgets/mainBody1.dart';
@@ -122,6 +124,15 @@ class _HomePageState extends State<HomePage> {
               ),
               // third
               // Padding(padding: EdgeInsets.all(10)),
+
+              //exiquitive body
+
+              Container(
+                width: dwidth,
+                // height: 400,
+                color: Color.fromARGB(255, 128, 214, 248),
+                child: ExecutiveBodys(),
+              ),
 
               Container(
                 width: dwidth,
