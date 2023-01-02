@@ -78,7 +78,7 @@ class About extends StatelessWidget {
               width: 750,
               height: 500,
               child: Expanded(
-                child: Text(
+                child: SelectableText(
                   textAlign: TextAlign.justify,
                   'IUB ACM Student Chapter is one of the 680 chapters around'
                   ' the world and was the first student chapter of the Association for Computing Machineries in Bangladesh.'

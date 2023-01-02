@@ -9,6 +9,7 @@ import '../widgets/logos.dart';
 import '../widgets/mainBody1.dart';
 import '../widgets/what_we_do.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../widgets/contact_us.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -40,6 +41,7 @@ class _HomePageState extends State<HomePage> {
                 child: MainImageCard(),
               ),
               //
+
               // iub acm logos
               Container(
                 width: dwidth,
@@ -132,6 +134,13 @@ class _HomePageState extends State<HomePage> {
                 // height: 400,
                 color: Color.fromARGB(255, 128, 214, 248),
                 child: ExecutiveBodys(),
+              ),
+              // CONTACT US
+              Container(
+                width: dwidth,
+                height: 400,
+                color: Color.fromARGB(255, 128, 214, 248),
+                child: ContactUs(dwidth, dheight),
               ),
 
               Container(
