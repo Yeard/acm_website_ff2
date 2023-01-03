@@ -43,9 +43,10 @@ class _LogosCardState extends State<LogosCard> {
         ),
         curve: Curves.linearToEaseOut,
         child: Column(
+          //mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(padding: EdgeInsets.only(top: 10)),
-            Text(
+            /*    Text(
               widget.heding,
               style: GoogleFonts.lato(
                   textStyle: Theme.of(context).textTheme.headline4,
@@ -55,7 +56,7 @@ class _LogosCardState extends State<LogosCard> {
 
                   // fontStyle: FontStyle.italic,
                   ),
-            ),
+            ), */
             Padding(padding: EdgeInsets.only(top: 8)),
             Container(
                 width: 250,

@@ -44,7 +44,7 @@ class ContactUs extends StatelessWidget {
                       borderRadius: BorderRadius.circular(15)),
                   child: Container(
                     width: 500,
-                    height: 270,
+                    height: 250,
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -168,7 +168,7 @@ class ContactUs extends StatelessWidget {
                       borderRadius: BorderRadius.circular(15)),
                   child: Container(
                     width: 500,
-                    height: 270,
+                    height: 250,
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -226,43 +226,48 @@ class ContactUs extends StatelessWidget {
                           //
                           Container(
                               alignment: Alignment.center,
-                              child: SelectableText.rich(TextSpan(
-                                children: <InlineSpan>[
+                              child: SelectableText.rich(
+                                  textAlign: TextAlign.justify,
                                   TextSpan(
-                                    text: 'iubacm',
-                                    style: GoogleFonts.lato(
-                                      color: Colors.black54,
-                                      textStyle:
-                                          Theme.of(context).textTheme.headline4,
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w600,
-                                      fontStyle: FontStyle.italic,
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: '@gmail',
-                                    style: GoogleFonts.lato(
-                                      color: Colors.black54,
-                                      textStyle:
-                                          Theme.of(context).textTheme.headline4,
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w600,
-                                      fontStyle: FontStyle.italic,
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: '.com',
-                                    style: GoogleFonts.lato(
-                                      color: Colors.blue,
-                                      textStyle:
-                                          Theme.of(context).textTheme.headline4,
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w600,
-                                      //fontStyle: FontStyle.italic,
-                                    ),
-                                  ),
-                                ],
-                              ))),
+                                    children: <InlineSpan>[
+                                      TextSpan(
+                                        text: 'iubacm',
+                                        style: GoogleFonts.lato(
+                                          color: Colors.black54,
+                                          textStyle: Theme.of(context)
+                                              .textTheme
+                                              .headline4,
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w600,
+                                          fontStyle: FontStyle.italic,
+                                        ),
+                                      ),
+                                      TextSpan(
+                                        text: '@gmail',
+                                        style: GoogleFonts.lato(
+                                          color: Colors.black54,
+                                          textStyle: Theme.of(context)
+                                              .textTheme
+                                              .headline4,
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w600,
+                                          fontStyle: FontStyle.italic,
+                                        ),
+                                      ),
+                                      TextSpan(
+                                        text: '.com',
+                                        style: GoogleFonts.lato(
+                                          color: Colors.blue,
+                                          textStyle: Theme.of(context)
+                                              .textTheme
+                                              .headline4,
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w600,
+                                          //fontStyle: FontStyle.italic,
+                                        ),
+                                      ),
+                                    ],
+                                  ))),
                           //
 
                           Padding(padding: EdgeInsets.all(10)),

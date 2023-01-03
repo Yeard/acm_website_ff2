@@ -4,6 +4,7 @@ import '../widgets/about.dart';
 import '../widgets/customScrollbarWithSingleChildScrollView.dart';
 import '../widgets/executivebody_card.dart';
 import '../widgets/executivebodys.dart';
+import '../widgets/footer.dart';
 import '../widgets/home_page_main_card.dart';
 import '../widgets/logos.dart';
 import '../widgets/mainBody1.dart';
@@ -121,7 +122,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 width: dwidth,
                 height: 400,
-                color: Color.fromARGB(255, 128, 214, 248),
+                color: Color.fromARGB(255, 163, 224, 248),
                 child: WhatWeDo(dwidth, dheight),
               ),
               // third
@@ -131,8 +132,7 @@ class _HomePageState extends State<HomePage> {
 
               Container(
                 width: dwidth,
-                // height: 400,
-                color: Color.fromARGB(255, 128, 214, 248),
+                color: Color.fromARGB(255, 163, 224, 248),
                 child: ExecutiveBodys(),
               ),
               // CONTACT US
@@ -145,9 +145,9 @@ class _HomePageState extends State<HomePage> {
 
               Container(
                 width: dwidth,
-                height: 700,
+                // height: 300,
                 color: Color.fromARGB(255, 7, 121, 236),
-                child: Text('tt'),
+                child: Footer(dwidth, dheight),
               )
             ],
           ),

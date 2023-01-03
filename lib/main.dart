@@ -30,8 +30,9 @@ class _NavigationExampleState extends State<NavigationExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: NavigationBar(
-        backgroundColor: Color.fromARGB(255, 125, 189, 241),
-        animationDuration: Duration(milliseconds: 500),
+        elevation: 15,
+        backgroundColor: Color.fromARGB(255, 187, 183, 244),
+        animationDuration: Duration(milliseconds: 1000),
         height: 60,
         onDestinationSelected: (int index) {
           setState(() {
@@ -49,8 +50,7 @@ class _NavigationExampleState extends State<NavigationExample> {
             label: 'About Us',
           ),
           NavigationDestination(
-            selectedIcon: Icon(Icons.bookmark),
-            icon: Icon(Icons.contact_support_outlined),
+            icon: Icon(Icons.phone_android_outlined),
             label: 'contact us',
           ),
           NavigationDestination(

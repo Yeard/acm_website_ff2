@@ -38,8 +38,7 @@ class _WhatWeDoCardState extends State<WhatWeDoCard> {
               hovering ? BorderRadius.circular(40) : BorderRadius.circular(15),
           boxShadow: [
             BoxShadow(
-              color:
-                  hovering ? Colors.black : Color.fromARGB(135, 221, 10, 232),
+              color: hovering ? Colors.black : Color.fromARGB(134, 21, 16, 22),
               blurRadius: 3,
               offset: Offset(4, 4), // Shadow position
             ),
