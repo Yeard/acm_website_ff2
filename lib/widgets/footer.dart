@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:getwidget/getwidget.dart';
 
 class Footer extends StatelessWidget {
   double dwith;
@@ -25,7 +26,23 @@ class Footer extends StatelessWidget {
             width: 300,
             color: Colors.orange,
             child: Column(
-              children: [Text('pp')],
+              children: [
+                Text('pp'),
+                //
+                GFAnimation(
+                  curve: Curves.linearToEaseOut,
+                  duration: Duration(seconds: 2),
+                  alignment: Alignment.bottomLeft,
+                  type: GFAnimationType.scaleTransition,
+                  child: Image.asset(
+                    'images/acm.png',
+                    width: 80,
+                    height: 80,
+                  ),
+                ),
+
+                //
+              ],
             ),
           ),
 
