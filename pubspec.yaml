@@ -39,6 +39,8 @@ dependencies:
   google_fonts: ^3.0.1
   hovering: ^1.0.4
   animated_text_kit: ^4.2.2
+  
+  
 
 
   
@@ -76,6 +78,7 @@ flutter:
     - images/acm.png
     - images/cse.png
     - images/IUB.png
+    
 
     
 
