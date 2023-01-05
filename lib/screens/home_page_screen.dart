@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
 import '../widgets/about.dart';
 import '../widgets/customScrollbarWithSingleChildScrollView.dart';
-
 import '../widgets/executivebodys.dart';
 import '../widgets/footer.dart';
 import '../widgets/home_page_main_card.dart';
@@ -29,8 +27,7 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       body: ListView(
-        //  mainAxisSize: MainAxisSize.min,
-
+        physics: ScrollPhysics(),
         children: [
           //first
           Container(
@@ -49,16 +46,17 @@ class _HomePageState extends State<HomePage> {
             child: Logos(dwidth, dheight),
           ),
           // acm updats
-          Padding(padding: EdgeInsets.only(top: 20)),
+          // Padding(padding: EdgeInsets.only(top: 20)),
 
           Container(
-            decoration: BoxDecoration(
+            color: Color.fromARGB(255, 0, 32, 45),
+            /*  decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(18),
               color: Colors.blue,
-            ),
-            padding: EdgeInsets.only(top: 10),
+            ),*/
+            padding: EdgeInsets.only(top: 15),
             //   color: Color.fromARGB(255, 163, 224, 248),
-            width: 300,
+            width: 200,
             height: 60,
             child: Text(
               'IUB ACM UPDATES',
@@ -120,7 +118,8 @@ class _HomePageState extends State<HomePage> {
           Container(
             width: dwidth,
             height: 400,
-            color: Color.fromARGB(255, 163, 224, 248),
+            //  color: Color.fromARGB(255, 163, 224, 248),
+            color: Color.fromARGB(255, 193, 234, 244),
             child: WhatWeDo(dwidth, dheight),
           ),
           // third
@@ -144,7 +143,7 @@ class _HomePageState extends State<HomePage> {
           Container(
             width: dwidth,
             // height: 300,
-            color: Color.fromARGB(255, 7, 121, 236),
+            color: Color.fromARGB(255, 209, 226, 243),
             child: Footer(dwidth, dheight),
           )
         ],

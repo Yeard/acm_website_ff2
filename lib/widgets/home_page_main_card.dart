@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -13,10 +11,10 @@ class MainImageCard extends StatelessWidget {
       alignment: Alignment.centerLeft,
       /* decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('images/acm_cover_photo.png'),
+          image: AssetImage('images/M1.jpg'),
           fit: BoxFit.cover,
         ),
-      ),*/
+      ), */
       color: Colors.white60,
       child: Container(
         padding: EdgeInsets.only(top: 80, left: 50),

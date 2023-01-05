@@ -11,6 +11,7 @@ class ExecutiveBodys extends StatelessWidget {
     return Container(
       child: Column(
         children: [
+          Padding(padding: EdgeInsets.only(top: 20, bottom: 20)),
           //
           Container(
             padding: EdgeInsets.all(10),
