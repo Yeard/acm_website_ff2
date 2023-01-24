@@ -54,6 +54,7 @@ class WhatWeDo extends StatelessWidget {
               Spacer(),
             ],
           ),
+          Padding(padding: EdgeInsets.only(bottom: 20)),
         ],
       ),
     );

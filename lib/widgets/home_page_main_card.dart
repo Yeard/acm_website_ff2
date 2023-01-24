@@ -9,13 +9,17 @@ class MainImageCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.centerLeft,
-      /* decoration: BoxDecoration(
+      decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('images/M1.jpg'),
+          image: const AssetImage('images/p.png'),
+          colorFilter: ColorFilter.mode(
+            Color.fromARGB(153, 100, 95, 95).withOpacity(0.8),
+            BlendMode.modulate,
+          ),
           fit: BoxFit.cover,
         ),
-      ), */
-      color: Colors.white60,
+      ),
+      //   color: Colors.white60,
       child: Container(
         padding: EdgeInsets.only(top: 80, left: 50),
         child: Column(
@@ -32,9 +36,11 @@ class MainImageCard extends StatelessWidget {
                     speed: const Duration(milliseconds: 500),
                     'IUB ACM STUDENT CHAPTER',
                     textStyle: const TextStyle(
-                      fontSize: 52.0,
+                      // decoration: TextDecoration.lineThrough,
+
+                      fontSize: 60.0,
                       fontWeight: FontWeight.bold,
-                      color: Colors.blue,
+                      color: Color.fromARGB(255, 16, 144, 248),
                     ),
                   ),
                 ],
@@ -47,10 +53,10 @@ class MainImageCard extends StatelessWidget {
               alignment: Alignment.topLeft,
               height: 45,
               child: Text(
-                'JOIN US',
+                'JOIN US :',
                 style: GoogleFonts.lato(
                   textStyle: Theme.of(context).textTheme.headline4,
-                  fontSize: 40,
+                  fontSize: 42,
                   fontWeight: FontWeight.w600,
                   color: Colors.deepOrange,
                   // fontStyle: FontStyle.italic,
@@ -58,6 +64,7 @@ class MainImageCard extends StatelessWidget {
               ),
             ),
             //
+            Padding(padding: EdgeInsets.only(bottom: 10)),
             Container(
               //  color: Colors.red,
               height: 60,
@@ -70,7 +77,7 @@ class MainImageCard extends StatelessWidget {
                       'WE ARE : ',
                       style: GoogleFonts.lato(
                         textStyle: Theme.of(context).textTheme.headline4,
-                        fontSize: 32,
+                        fontSize: 34,
                         fontWeight: FontWeight.w600,
                         // fontStyle: FontStyle.italic,
                       ),
@@ -107,7 +114,7 @@ class MainImageCard extends StatelessWidget {
                         */
                         ScaleAnimatedText(
                           duration: const Duration(milliseconds: 4000),
-                          'Creative',
+                          'CREATIVE',
                           textStyle: TextStyle(
                             fontSize: 45.0,
                             fontFamily: 'Canterbury',
@@ -117,7 +124,7 @@ class MainImageCard extends StatelessWidget {
                         ),
                         ScaleAnimatedText(
                           duration: const Duration(milliseconds: 4000),
-                          'Enovetive',
+                          'INNOVATIVE',
                           textStyle: TextStyle(
                             fontSize: 45.0,
                             fontFamily: 'Canterbury',
