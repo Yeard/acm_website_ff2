@@ -11,7 +11,7 @@ class ExecutiveBodys extends StatelessWidget {
     return Container(
       child: Column(
         children: [
-          Padding(padding: EdgeInsets.only(top: 20, bottom: 20)),
+          Padding(padding: EdgeInsets.only(top: 70)),
           //
           Container(
             padding: EdgeInsets.all(10),
@@ -32,7 +32,7 @@ class ExecutiveBodys extends StatelessWidget {
               ),
             ),
           ),
-          Padding(padding: EdgeInsets.all(20)),
+          Padding(padding: EdgeInsets.only(top: 50)),
           //
           Wrap(
             crossAxisAlignment: WrapCrossAlignment.center,
@@ -40,13 +40,25 @@ class ExecutiveBodys extends StatelessWidget {
             children: [
               Container(
                   margin: EdgeInsets.only(bottom: 15),
-                  child: ExecutiveBodyCard()),
+                  child: ExecutiveBodyCard(
+                    imagelink: 'images/acm_cover_photo.png',
+                    name: 'Name',
+                    position: 'Chair',
+                  )),
               Container(
                   margin: EdgeInsets.only(bottom: 15),
-                  child: ExecutiveBodyCard()),
+                  child: ExecutiveBodyCard(
+                    imagelink: 'images/acm_cover_photo.png',
+                    name: 'Name',
+                    position: 'VChair',
+                  )),
               Container(
                   margin: EdgeInsets.only(bottom: 15),
-                  child: ExecutiveBodyCard()),
+                  child: ExecutiveBodyCard(
+                    imagelink: 'images/yeardpic.jpg',
+                    name: 'Md.Yeard Morshed',
+                    position: 'GENERAL SECRETARY',
+                  )),
             ],
           ),
           Padding(padding: EdgeInsets.all(30)),
@@ -57,13 +69,25 @@ class ExecutiveBodys extends StatelessWidget {
             children: [
               Container(
                   margin: EdgeInsets.only(bottom: 15),
-                  child: ExecutiveBodyCard()),
+                  child: ExecutiveBodyCard(
+                    imagelink: 'images/acm_cover_photo.png',
+                    name: 'Name',
+                    position: 'Chair',
+                  )),
               Container(
                   margin: EdgeInsets.only(bottom: 15),
-                  child: ExecutiveBodyCard()),
+                  child: ExecutiveBodyCard(
+                    imagelink: 'images/acm_cover_photo.png',
+                    name: 'Name',
+                    position: 'Chair',
+                  )),
               Container(
                   margin: EdgeInsets.only(bottom: 15),
-                  child: ExecutiveBodyCard()),
+                  child: ExecutiveBodyCard(
+                    imagelink: 'images/acm_cover_photo.png',
+                    name: 'Name',
+                    position: 'Chair',
+                  )),
             ],
           ),
           Padding(padding: EdgeInsets.all(20)),

@@ -4,6 +4,12 @@ import 'package:getwidget/types/gf_animation_type.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ExecutiveBodyCard extends StatefulWidget {
+  final String imagelink;
+  final String name;
+  final String position;
+  ExecutiveBodyCard(
+      {required this.imagelink, required this.name, required this.position});
+
   @override
   State<ExecutiveBodyCard> createState() => _ExecutiveBodyCardState();
 }
@@ -64,7 +70,7 @@ class _ExecutiveBodyCardState extends State<ExecutiveBodyCard> {
                 height: 335,
                 child: FittedBox(
                   fit: BoxFit.fill,
-                  child: Image.asset('images/acm_cover_photo.png'),
+                  child: Image.asset(widget.imagelink),
                 ),
               ),
               //  Padding(padding: EdgeInsets.only(top: 10)),
@@ -75,21 +81,22 @@ class _ExecutiveBodyCardState extends State<ExecutiveBodyCard> {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Text(
-                          'Name : Md. Yeard Morshed',
+                          widget.name,
                           style: GoogleFonts.lato(
                               textStyle: Theme.of(context).textTheme.headline4,
-                              fontSize: 23,
+                              fontSize: 24,
                               fontWeight: FontWeight.w700,
                               color: hovering ? Colors.white : Colors.blue
 
                               // fontStyle: FontStyle.italic,
                               ),
                         ),
+                        Padding(padding: EdgeInsets.only(top: 3)),
                         Text(
-                          'Chair',
+                          widget.position,
                           style: GoogleFonts.lato(
                               textStyle: Theme.of(context).textTheme.headline4,
-                              fontSize: 24,
+                              fontSize: 21,
                               fontWeight: FontWeight.w700,
                               color: hovering ? Colors.white : Colors.blue
 
@@ -101,7 +108,7 @@ class _ExecutiveBodyCardState extends State<ExecutiveBodyCard> {
                   :
                   //
                   Text(
-                      'Chair',
+                      widget.position,
                       style: GoogleFonts.lato(
                           textStyle: Theme.of(context).textTheme.headline4,
                           fontSize: 25,

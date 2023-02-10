@@ -117,9 +117,9 @@ class _HomePageState extends State<HomePage> {
           //  Padding(padding: EdgeInsets.all(10)),
           Container(
             width: dwidth,
-            height: 400,
+            height: 450,
             //  color: Color.fromARGB(255, 163, 224, 248),
-            color: Color.fromARGB(255, 193, 234, 244),
+            color: Color.fromARGB(255, 163, 224, 248),
             child: WhatWeDo(dwidth, dheight),
           ),
           // third
@@ -129,7 +129,8 @@ class _HomePageState extends State<HomePage> {
 
           Container(
             width: dwidth,
-            color: Color.fromARGB(255, 163, 224, 248),
+            height: 1180,
+            color: Color.fromARGB(255, 167, 224, 247),
             child: ExecutiveBodys(),
           ),
           // CONTACT US

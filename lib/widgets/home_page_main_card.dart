@@ -38,9 +38,9 @@ class MainImageCard extends StatelessWidget {
                     textStyle: const TextStyle(
                       // decoration: TextDecoration.lineThrough,
 
-                      fontSize: 60.0,
+                      fontSize: 65.0,
                       fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(255, 16, 144, 248),
+                      color: Colors.white,
                     ),
                   ),
                 ],
