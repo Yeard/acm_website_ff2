@@ -42,7 +42,8 @@ class _HomePageState extends State<HomePage> {
           Container(
             width: dwidth,
             height: 450,
-            color: Color.fromARGB(255, 163, 224, 248),
+            //  color: Color.fromARGB(255, 163, 224, 248),
+            color: Color.fromARGB(255, 255, 255, 255),
             child: Logos(dwidth, dheight),
           ),
           // acm updats
@@ -94,7 +95,7 @@ class _HomePageState extends State<HomePage> {
               controller: con,
               scrollDirection: Axis.horizontal,
               child: Container(
-                color: Color.fromARGB(255, 4, 26, 35),
+                color: Color.fromARGB(255, 3, 19, 25),
                 width: dwidth,
                 child: About(dwidth, dheight),
               ),
@@ -129,7 +130,7 @@ class _HomePageState extends State<HomePage> {
 
           Container(
             width: dwidth,
-            height: 1180,
+            //  height: 1180,
             color: Color.fromARGB(255, 167, 224, 247),
             child: ExecutiveBodys(),
           ),
