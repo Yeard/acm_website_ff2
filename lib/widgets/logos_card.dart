@@ -30,7 +30,7 @@ class _LogosCardState extends State<LogosCard> {
         alignment: hovering ? Alignment.center : AlignmentDirectional.topCenter,
         duration: const Duration(seconds: 2),
         decoration: BoxDecoration(
-          color: hovering ? Colors.blue : Colors.white,
+          color: hovering ? Color.fromARGB(255, 142, 179, 243) : Colors.white,
           borderRadius:
               hovering ? BorderRadius.circular(20) : BorderRadius.circular(18),
           boxShadow: [

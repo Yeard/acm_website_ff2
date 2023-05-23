@@ -14,8 +14,10 @@ class Logos extends StatelessWidget {
       width: 500,
       height: 500,
       child: Card(
-        color: Color.fromARGB(255, 163, 224, 248),
-        elevation: 22,
+        margin: EdgeInsets.all(20),
+        //color: Color.fromARGB(255, 163, 224, 248),
+        color: Color.fromARGB(255, 201, 222, 238),
+        elevation: 30,
         child: Row(
           children: [
             Spacer(),

@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class About extends StatelessWidget {
   double dwidth;
-  dynamic dhight;
+  double dhight;
   About(this.dwidth, this.dhight);
 
   @override
